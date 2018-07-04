@@ -1,0 +1,26 @@
+{
+  "name": "sms",
+  "version": "0.0.0",
+  "description": "",
+  "author": "developerworld <apoorw@apoorwanand.cf>",
+  "main": "functions/__main__.js",
+  "dependencies": {
+    "@slack/client": "^4.3.1",
+    "lib": "^3.0.1"
+  },
+  "private": true,
+  "stdlib": {
+    "build": "faaslang",
+    "name": "developerworld/sms",
+    "timeout": 10000,
+    "publish": true,
+    "personalize": {
+      "keys": [],
+      "user": []
+    },
+    "source": "@messagebird/messagehub/0.1.6"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
