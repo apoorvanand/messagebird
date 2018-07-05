@@ -21,9 +21,10 @@ module.exports = async (sender = '', receiver = '', message = '', createdDatetim
       {
         'Content-Type': 'application/json'
       },
-    data: { text: message }
+    data: { from:'sender',text: message,rec:'receiver' }
   })
   return send(receiver, sender, `Check the inbox at https://email-parser-woiobywivz.now.sh/inbox`)
     console.log("sent");
 
 }
+
