@@ -18,6 +18,7 @@ module.exports = async (sender = '', receiver = '', message = '_', createdDateti
       message: message,
       receiver: receiver,
       createdDatetime: createdDatetime
+      
     })
   } catch (e) {
     // Catch thrown errors specifically so we can log them. See logs using
